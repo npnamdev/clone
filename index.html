@@ -13,7 +13,11 @@
           colors: {
             'primary': '#002157',
             'secondary': '#ffc655'
-          }
+          },
+          maxWidth: {
+            '6xl': '1080px',
+            '8xl': '90rem',
+          },
         }
       }
     }
@@ -25,40 +29,60 @@
     <div class="bg-white z-50 sticky top-0 select-none shadow-[0px_4px_4px_rgba(93,90,90,0.15)]">
         <nav class="flex justify-between items-center h-[62px] mx-auto max-w-6xl">
             <!-- Logo -->
-            <a href="#" class="w-[120px] mt-[-5px]">
-                <img class="w-full" src="https://cdn-proxy.hoolacdn.com/mcbooks-15262-1ga7qqqik/sgp1/lib/image/logo-vikidy4x_vGioYB8ow9aBY9Zgi-original.png">
+            <a href="#" class="w-[130px]">
+                <img class="w-full" src="https://res.cloudinary.com/dijvnrdmc/image/upload/v1708136703/logo_fqfewn.png">
             </a>
+
+           
     
             <!-- Menu -->
-            <ul class="flex gap-7 font-bold">
+            <ul class="flex gap-7 font-bold text-black">
                 <li>
-                    <a class="text-sm font-bold h-[60px] flex items-center cursor-pointer gap-1 truncate text-ellipsis" href="#">Trang chủ</a>
+                    <a class="text-sm font-bold h-[60px] flex items-center cursor-pointer gap-1 truncate text-ellipsis" href="#">Home</a>
                 </li>
                 <li>
-                    <a class="text-sm font-bold h-[60px] flex items-center cursor-pointer gap-1 truncate text-ellipsis" href="#">Khóa học</a>
+                    <a class="text-sm font-bold h-[60px] flex items-center cursor-pointer gap-1 truncate text-ellipsis" href="#">Courses</a>
                 </li>
                 <li>
-                    <a class="text-sm font-bold h-[60px] flex items-center cursor-pointer gap-1 truncate text-ellipsis" href="#">Tài liệu</a>
+                    <a class="text-sm font-bold h-[60px] flex items-center cursor-pointer gap-1 truncate text-ellipsis" href="#">Document</a>
                 </li>
                 <li>
-                    <a class="text-sm font-bold h-[60px] flex items-center cursor-pointer gap-1 truncate text-ellipsis" href="#">Blog</a>
+                    <a class="text-sm font-bold h-[60px] flex items-center cursor-pointer gap-1 truncate text-ellipsis" href="#">Blogs</a>
                 </li>
                 <li>
-                    <a class="text-sm font-bold h-[60px] flex items-center cursor-pointer gap-1 truncate text-ellipsis" href="#">Liên hệ</a>
+                    <a class="text-sm font-bold h-[60px] flex items-center cursor-pointer gap-1 truncate text-ellipsis" href="#">Contact Us</a>
                 </li>
             </ul>
+<!-- 
+            <input class="w-[260px] rounded border py-[5px] px-4" type="text" placeholder="Tìm kiếm khóa học..."> -->
     
-            <div class="flex items-center gap-6">
-                <button class="text-sm font-bold h-[60px] flex items-center cursor-pointer gap-1 truncate text-ellipsis">Kích hoạt</button>
-                <button class="bg-[#002d71] py-[7px] px-3 text-white rounded text-sm">Đăng nhập</button>
+            <div class="flex items-center gap-4 text-black">
+                <button class="text-sm font-bold h-[60px] flex items-center cursor-pointer gap-1 truncate text-ellipsis">Activated</button>
+                <button class="bg-[#1a76d1] py-[7px] px-3 text-white rounded text-sm">Login</button>
+                <img class="w-[25px]" src="https://res.cloudinary.com/dijvnrdmc/image/upload/v1704264686/ic_flag_en_ztil36.svg" alt="">
             </div>
         </nav>
     </div>
 
     <!-- Banner -->
-    <div class="mx-auto max-w-6xl h-[370px]">
-        <img class="rounded h-full" src="https://cdn-proxy.hoolacdn.com/vne-hoola-cdn-02/sgp1/lib/image/banner-1_mCR9YTgTXmmQC4gcm-original.jpg" alt="">
-     </div>
+    <div class="bg-[#f3f5fe]">
+        <div class="mx-auto max-w-6xl grid grid-cols-2 py-10 gap-16">
+            <div class="flex flex-col justify-center max-w-[450px]">
+                <h5 class="font-bold text-base text-secondary">Nền tảng tạo website trực tuyến</h5>
+                <h1 class="font-bold text-2xl text-primary py-2">Hoola - Truyền tải tri thức
+                    không giới hạn</h1>
+                <p class="leading-7 font-medium text-primary">Xây dựng trang web đào tạo chuyên nghiệp với tên miền riêng, bảo mật video hàng đầu, quản lý học viên, bán khoá học, marketing, chương trình affiliate, kiểm tra và cấp chứng chỉ. Hỗ trợ thanh toán trực tuyến và COD, đội ngũ hỗ trợ kỹ thuật 24/7. Đồng hành tổ chức dạy học và kinh doanh khoá học trực tuyến, sự kiện trực tuyến và đào tạo nội bộ hiệu quả.</p>
+                <div class="flex flex-col gap-4 mt-4">
+                    <input class="py-4 px-5 border rounded" type="text" placeholder="Nhập email của bạn">
+                    <button class="py-4 bg-[#1a76d1] text-white rounded">Đăng ký tư vấn miễn phí</button>
+                </div>
+            </div>
+            <div class="flex flex-col justify-center ">
+                <img src="https://res.cloudinary.com/dijvnrdmc/image/upload/v1706001583/snapedit_1706001570499_hd1jmp.png" alt="">
+            </div>
+         </div>
+    </div>
+    
 
     <!-- Danh sách khóa học -->
     <div class="mx-auto max-w-6xl">
